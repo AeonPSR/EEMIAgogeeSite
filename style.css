@@ -26,6 +26,7 @@ html {
     --main-gold: #cead80;
     --black: #141414;
     --white: white;
+	font-family: "Hanken Grotesk", sans-serif;
 }
 
 /* H p */
@@ -234,8 +235,8 @@ h1 {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 20px;
     flex-shrink: 0;
     background-color: #cead80;
@@ -250,13 +251,52 @@ h1 {
 .temoiImage {
 	flex-grow: 1;
 	object-fit: fill;
-	background-color: blue;
 	width: 100%;
-	background-image: url("assets/box.png");
+	background-image: url("assets/erg.webp");
 	background-size: cover;
 	background-position: center;
 }
 
+.temoiCorps {
+	padding: 25px;
+	text-align: left;
+}
+
+.temoiText {
+	color: var(--black);
+}
+
+.temoiInfo {
+	font-style: italic;
+	color: var(--black);
+}
+
+/* Carousel */
+
+
+/* Contact */
+
+.contact {
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.contactTitle {
+	margin-left: 50px;
+}
+
+.contactCTA {
+	align-self: flex-end;
+	background-color: var(--main-gold);
+	padding: 25px 45px;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+
+.contact > * {
+	max-width: 50%;
+}
 
 /* Footer */
 

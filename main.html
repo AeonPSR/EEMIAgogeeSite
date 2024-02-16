@@ -8,7 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    </head>
+		<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
     <body>
         <header>
             <img src="assets/box.png" class="logoHeader"  alt=""></img>
@@ -73,14 +74,15 @@
                 <!-- Check behaviour when there's not a multiple of 3 -->
             </section>
             <section class="part temoi">
-                <h2>LES TEMOIGNAGES</h2>
+                <h2>LES TÉMOIGNAGES</h2>
                 <div class="temoiElements">
                     <div class="temoiElement">
-						<img class="temoiImage" src="assets/box.png"></img>
+						<div class="temoiImage"></div>
 						<div class="temoiCorps">
 							<div class="temoiText">
-								Un super témoignage de quelqu'un qui a vraiment beaucoup aimé ses différentes sessions avec les coachs de l'Agogée. Et c'est que c'est vraiment vachement long comme retour. 200 caractères maintenant !
+								Un super témoignage de quelqu'un qui a beaucoup aimé ses différentes sessions avec les coachs de l'Agogée. Et c'est que c'est vraiment vachement long comme retour. 200 caractères maintenant !
 							</div>
+							<br />
 							<div class="temoiInfo">Donna Bleaker, 31</div>
 						</div>
 					</div>
@@ -88,20 +90,39 @@
 						<div class="temoiImage"></div>
 						<div class="temoiCorps">
 							<div class="temoiText">
-								Un super témoignage de quelqu'un qui a vraiment beaucoup aimé ses différentes sessions avec les coachs de l'Agogée. Et c'est que c'est vraiment vachement long comme retour. 200 caractères maintenant !
+								Un super témoignage de quelqu'un qui a beaucoup aimé ses différentes sessions avec les coachs de l'Agogée. Et c'est que c'est vraiment vachement long comme retour. 200 caractères maintenant !
 							</div>
+							<br />
+							<div class="temoiInfo">Donna Bleaker, 31</div>
+						</div>
+					</div>
+					<div class="temoiElement">
+						<div class="temoiImage"></div>
+						<div class="temoiCorps">
+							<div class="temoiText">
+								Un super témoignage de quelqu'un qui a beaucoup aimé ses différentes sessions avec les coachs de l'Agogée. Et c'est que c'est vraiment vachement long comme retour. 200 caractères maintenant !
+							</div>
+							<br />
 							<div class="temoiInfo">Donna Bleaker, 31</div>
 						</div>
 					</div>
                 </div>
             </section>
             <section class="part carou">
-                <!-- How ? -->
+				<div class="carousel">
+					<button id="prevBtn">Previous</button>
+					<div class="carousel-images">
+						<img src="assets/box.png" alt="Image 1">
+						<img src="assets/bla.webp" alt="Image 2">
+						<img src="assets/erg.webp" alt="Image 3">
+					</div>
+					<button id="nextBtn">Next</button>
+				</div>
             </section>
             <section class="part contact">
                 <!-- Img has background pic -->
-                <p>CONTACTEZ-NOUS DÈS AUJOURD'HUI.</p>
-                <a href="?">PRENDRE RENDEZ-VOUS</a>
+                <h2 class="contactTitle">CONTACTEZ-NOUS DÈS AUJOURD'HUI.</h2>
+                <a class="contactCTA" href="?">PRENDRE RENDEZ-VOUS</a>
             </section>
         </main>
         <footer>
