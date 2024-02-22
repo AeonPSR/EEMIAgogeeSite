@@ -40,6 +40,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--titles-font);
     color: var(--main-gold);
+	text-shadow: 1px 1px 1px var(--black);
 }
 
 h1, h2 {
@@ -66,6 +67,7 @@ div {
     right: 10px;
     top: 10px;
     width: 75px;
+	z-index: 1;
 }
 
 .part {
@@ -272,12 +274,20 @@ h1 {
 	min-height: auto;
 }
 
-.carousel {
+.carousel, .carouImg {
 	width: 100%;
 }
 
-.carouImg {
-	width: 100%;
+.glyphicon {
+	color: var(--main-gold);
+}
+
+.carousel-indicators li {
+	border-color: var(--main-gold);
+}
+
+.carousel-indicators .active {
+	background-color: var(--main-gold);
 }
 
 /* Contact */
@@ -293,6 +303,7 @@ h1 {
 	font-weight: bold;
 	font-size: 3em;
 	margin-left: 30px;
+	text-shadow: 1px 1px 1px var(--black);
 }
 
 .contactCTA {
@@ -322,7 +333,33 @@ h1 {
 /* Footer */
 
 footer {
-    background-color: aquamarine;
+    display: flex;
+	background-color: var(--main-gold);
+	min-height: 20vh;
+	align-items: center;
+	justify-content: space-around;
 }
 
+footer * {
+	color: var(--black);
+}
 
+footer h3 {
+	font-style: italic;
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	text-shadow: none;
+}
+
+.imgRS {
+	width: 100px;
+}
+
+.logosRS > :nth-child(2) {
+	margin: 0px 15px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+}
