@@ -1,0 +1,332 @@
+/*
+- Temp
+- Vars
+- H p div
+- Parts global settings
+- TitleCard
+- AboutUs
+- Fonda
+- Presta
+- Temoi
+- Carou
+- Contact
+- Footer
+*/
+
+
+/* Temp */
+
+img {
+    width: 150px;
+}
+
+/* Vars */
+
+html {
+    --main-gold: #cead80;
+    --black: #141414;
+    --white: white;
+	--titles-font: "Anton", sans-serif;
+	font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* H p */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--titles-font);
+    color: var(--main-gold);
+}
+
+h1, h2 {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: var(--white);
+}
+
+div {
+    color: var(--white);
+}
+
+/* Parts global settings */
+
+.logoHeader {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 75px;
+}
+
+.part {
+    background-color: aquamarine;
+    min-height: 100vh;
+    display: flex;
+}
+
+.temoi {
+    background-color: grey;
+}
+
+.carou {
+    background-color: purple;
+}
+
+.contact {
+    background-color: pink;
+    background-image: url('assets/box.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TitleCard */
+
+.titleCard {
+    background-color: teal;
+    background-image: url('assets/box.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 10em;
+}
+
+
+/* AboutUs */
+
+.aboutUs {
+    background-color: var(--black);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsText {
+    width: 40vw;
+}
+
+.aboutUsDisplay {
+    display: flex;
+    width: 400px;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.aboutUsDisplay > img {
+    height: 300px;
+}
+
+.aboutUsDisplay > :nth-child(2) {
+    align-self: end;
+}
+
+/* Fonda */
+
+.fonda {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.profile {
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: center;
+}
+
+.profile > h3 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.profile > img {    
+    width: 150px;
+}
+
+/* Presta */
+
+.presta {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.prestas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.prestaElement {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    background-color: #cead80;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	text-transform: uppercase;
+	font-style: italic;
+	color: white;
+	font-size: 1.5em;
+}
+
+
+
+.presta1, .presta2, .presta3, .presta4, .presta5 {
+	background-image: url("assets/box.png");
+}
+
+/* Témoignages */
+
+.temoi {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.temoiElements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.temoiElement {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    background-color: #cead80;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+}
+
+.temoiImage {
+	flex-grow: 1;
+	object-fit: fill;
+	width: 100%;
+	background-image: url("assets/erg.webp");
+	background-size: cover;
+	background-position: center;
+}
+
+.temoiCorps {
+	padding: 25px;
+	text-align: left;
+}
+
+.temoiText {
+	color: var(--black);
+}
+
+.temoiInfo {
+	font-style: italic;
+	color: var(--black);
+}
+
+/* Carousel */
+
+.carou {
+	min-height: auto;
+}
+
+.carousel {
+	width: 100%;
+}
+
+.item {
+	height: 630px;
+}
+
+.carouImg {
+	width: 100%;
+}
+
+/* Contact */
+
+.contact {
+	align-items: center;
+	justify-content: space-around;
+	min-height: 70vh;
+}
+
+.contactTitle {
+	width: 500px;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.contactCTA {
+	align-self: flex-end;
+	background-color: var(--main-gold);
+	font-family: var(--titles-font);
+	color: var(--black);
+	padding: 25px 45px;
+	text-decoration: none;
+	margin-bottom: 50px;
+
+}
+
+.contactCTA:hover {
+	/*TODO*/
+}
+
+.contact > * {
+	max-width: 50%;
+}
+
+/* Footer */
+
+footer {
+    background-color: aquamarine;
+}
+
+
