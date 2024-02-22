@@ -1,7 +1,7 @@
 /*
 - Temp
 - Vars
-- H p div
+- General statements 
 - Parts global settings
 - TitleCard
 - AboutUs
@@ -24,13 +24,18 @@ img {
 
 html {
     --main-gold: #cead80;
+	--hover-gold: #cf9d59;
     --black: #141414;
     --white: white;
 	--titles-font: "Anton", sans-serif;
-	font-family: "Hanken Grotesk", sans-serif;
+	--body-font: "Hanken Grotesk", sans-serif;
 }
 
-/* H p */
+/* General statements */
+
+html {
+	font-family: var(--body-font);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--titles-font);
@@ -64,21 +69,11 @@ div {
 }
 
 .part {
-    background-color: aquamarine;
     min-height: 100vh;
     display: flex;
 }
 
-.temoi {
-    background-color: grey;
-}
-
-.carou {
-    background-color: purple;
-}
-
 .contact {
-    background-color: pink;
     background-image: url('assets/box.png');
     background-size: 100% 100%;
     background-position: center;
@@ -88,7 +83,6 @@ div {
 /* TitleCard */
 
 .titleCard {
-    background-color: teal;
     background-image: url('assets/box.png');
     background-size: 100% 100%;
     background-position: center;
@@ -193,7 +187,7 @@ h1 {
     height: 300px;
     margin-bottom: 20px;
     flex-shrink: 0;
-    background-color: #cead80;
+    background-color: var(--main-gold);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -201,7 +195,7 @@ h1 {
 	background-position: center;
 	text-transform: uppercase;
 	font-style: italic;
-	color: white;
+	color: var(--white);
 	font-size: 1.5em;
 }
 
@@ -240,7 +234,7 @@ h1 {
     height: 350px;
     margin-bottom: 20px;
     flex-shrink: 0;
-    background-color: #cead80;
+    background-color: var(--main-gold);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -282,10 +276,6 @@ h1 {
 	width: 100%;
 }
 
-.item {
-	height: 630px;
-}
-
 .carouImg {
 	width: 100%;
 }
@@ -302,6 +292,7 @@ h1 {
 	width: 500px;
 	font-weight: bold;
 	font-size: 3em;
+	margin-left: 30px;
 }
 
 .contactCTA {
@@ -309,14 +300,19 @@ h1 {
 	background-color: var(--main-gold);
 	font-family: var(--titles-font);
 	color: var(--black);
-	padding: 25px 45px;
+	padding: 40px 90px;
 	text-decoration: none;
 	margin-bottom: 50px;
-
+	font-size: 2em;
+	font-style: italic;
+	margin-right: 30px;
+	white-space: nowrap;
 }
 
 .contactCTA:hover {
-	/*TODO*/
+	text-decoration: none;
+	color: var(--black);
+	background-color: var(--hover-gold);
 }
 
 .contact > * {
