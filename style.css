@@ -13,18 +13,12 @@
 - Footer
 */
 
-
-/* Temp */
-
-img {
-    width: 150px;
-}
-
 /* Vars */
 
 html {
     --main-gold: #cead80;
 	--hover-gold: #cf9d59;
+	--clear-gold: #ebe4da;
     --black: #141414;
     --white: white;
 	--titles-font: "Anton", sans-serif;
@@ -66,7 +60,7 @@ div {
     position: fixed;
     right: 10px;
     top: 10px;
-    width: 75px;
+    width: 100px;
 	z-index: 1;
 }
 
@@ -97,6 +91,9 @@ h1 {
     font-size: 10em;
 }
 
+.titleClear {
+	color: var(--clear-gold);
+}
 
 /* AboutUs */
 
@@ -121,6 +118,7 @@ h1 {
 
 .aboutUsDisplay > img {
     height: 300px;
+	width: 150px;
 }
 
 .aboutUsDisplay > :nth-child(2) {
@@ -139,14 +137,19 @@ h1 {
 }
 
 .profiles {
-    display: flex;
-    flex-direction: row;
     width: 90%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .profile {
    margin-left: 20px;
    margin-right: 20px;
+   margin-bottom: 20px;
    text-align: center;
 }
 
@@ -158,6 +161,10 @@ h1 {
 
 .profile > img {    
     width: 150px;
+}
+
+.profile > p {
+	width: 400px;
 }
 
 /* Presta */
