@@ -70,8 +70,8 @@ div {
 }
 
 .contact {
-    background-image: url('assets/box.png');
-    background-size: 100% 100%;
+    background-image: url('assets/pictures/contact.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -79,8 +79,8 @@ div {
 /* TitleCard */
 
 .titleCard {
-    background-image: url('assets/box.png');
-    background-size: 100% 100%;
+    background-image: url('assets/pictures/head.png');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
@@ -208,17 +208,30 @@ h1 {
 	font-size: 1.5em;
 }
 
+.presta1 {
+	background-image: url("assets/pictures/presta1.png");
+}
 
+.presta2 {
+	background-image: url("assets/pictures/presta2.png");
+}
 
-.presta1, .presta2, .presta3, .presta4, .presta5 {
-	background-image: url("assets/box.png");
+.presta3 {
+	background-image: url("assets/pictures/presta3.png");
+}
+
+.presta4 {
+	background-image: url("assets/pictures/presta4.jpg");
+}
+
+.presta5 {
+	background-image: url("assets/pictures/presta5.png");
 }
 
 /* Témoignages */
 
 .temoi {
     background-color: var(--black);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -287,6 +300,8 @@ h1 {
 
 .glyphicon {
 	color: var(--main-gold);
+	text-shadow: 1px 1px 1px var(--black);
+
 }
 
 .carousel-indicators li {
@@ -345,10 +360,15 @@ footer {
 	min-height: 20vh;
 	align-items: center;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 footer * {
 	color: var(--black);
+}
+
+footer a:hover{
+	text-decoration: none;
 }
 
 footer h3 {
@@ -359,7 +379,7 @@ footer h3 {
 }
 
 .imgRS {
-	width: 100px;
+	width: 75px;
 }
 
 .logosRS > :nth-child(2) {
