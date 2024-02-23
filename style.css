@@ -1,16 +1,15 @@
 /*
-- Temp
-- Vars
-- General statements 
-- Parts global settings
-- TitleCard
-- AboutUs
-- Fonda
-- Presta
-- Temoi
-- Carou
-- Contact
-- Footer
+15 - Vars
+27 - General statements 
+56 - Parts global settings
+78 - TitleCard
+115 - AboutUs
+162 - Fonda
+204 - Presta
+265 - Temoi
+325 - Carou
+349 - Contact
+411 - Footer
 */
 
 /* Vars */
@@ -46,11 +45,7 @@ h2 {
     margin-bottom: 0.5em;
 }
 
-p {
-    color: var(--white);
-}
-
-div {
+p, div {
     color: var(--white);
 }
 
@@ -95,6 +90,24 @@ h1 {
 	color: var(--clear-gold);
 }
 
+@media (max-width: 800px) {
+	h1 {
+		font-size: 8em;
+	}
+}
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+@media (max-width: 450px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
 /* AboutUs */
 
 .aboutUs {
@@ -124,6 +137,23 @@ h1 {
 .aboutUsDisplay > :nth-child(2) {
     align-self: end;
 }
+
+@media (max-width: 835px) {
+	.aboutUs {
+		flex-direction: column;
+	}
+
+	.aboutUsText {
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.aboutUsTitle {
+		align-self: center;
+	}
+}
+
 
 /* Fonda */
 
@@ -351,6 +381,28 @@ h1 {
 .contact > * {
 	max-width: 50%;
 }
+
+@media (max-width: 800px) {
+	.contact {  
+		flex-direction: column;
+	}
+
+	.contactTitle {
+		width: 500px;
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.contactCTA {
+		align-self: auto;
+		padding: 40px 50px;
+		margin: 0px;
+	}
+
+	.contact > * {
+		max-width: none;
+	}
+  }
 
 /* Footer */
 
